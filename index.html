@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Cuánto sabes del cumpleañero? -.-</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    .question {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>¿Cuánto sabes del cumpleañero? -.-</h1>
+
+  <form id="quizForm">
+    <div class="question">
+      <p>1.- ¿Comida favorita de Joaquín?</p>
+      <label><input type="radio" name="q1" value="Mostrito"> Mostrito</label><br>
+      <label><input type="radio" name="q1" value="Ají de gallina"> Ají de gallina</label><br>
+      <label><input type="radio" name="q1" value="Pollo a la brasa"> Pollo a la brasa</label><br>
+      <label><input type="radio" name="q1" value="Chaufa"> Chaufa</label>
+    </div>
+
+    <div class="question">
+      <p>2.- ¿Bebida favorita de Joaquín?</p>
+      <label><input type="radio" name="q2" value="Coca cola"> Coca cola</label><br>
+      <label><input type="radio" name="q2" value="Inka Cola"> Inka cola</label><br>
+      <label><input type="radio" name="q2" value="Fanta"> Fanta</label><br>
+      <label><input type="radio" name="q2" value="Sprite"> Sprite</label>
+    </div>
+
+    <div class="question">
+      <p>3.- ¿Lugar favorito de Joaquín?</p>
+      <label><input type="radio" name="q3" value="Su casa"> Su casa</label><br>
+      <label><input type="radio" name="q3" value="Universidad"> Universidad</label><br>
+      <label><input type="radio" name="q3" value="La calle"> La calle</label><br>
+      <label><input type="radio" name="q3" value="Casa de la mamita"> Casa de la mamita</label>
+    </div>
+
+    <div class="question">
+      <p>4.- ¿Hobby de Joaquín?</p>
+      <label><input type="radio" name="q4" value="Jugar fútbol"> Jugar fútbol</label><br>
+      <label><input type="radio" name="q4" value="Tocar algún instrumento"> Tocar algún instrumento</label><br>
+      <label><input type="radio" name="q4" value="Juegos"> Juegos</label><br>
+      <label><input type="radio" name="q4" value="Hueviar"> Hueviar</label>
+    </div>
+
+    <div class="question">
+      <p>5.- ¿Qué estudia Joaquín?</p>
+      <label><input type="radio" name="q5" value="Ing. Sistemas"> Ing. Sistemas</label><br>
+      <label><input type="radio" name="q5" value="Ciencia de datos"> Ciencia de datos</label><br>
+      <label><input type="radio" name="q5" value="Ing. Software"> Ing. Software</label><br>
+      <label><input type="radio" name="q5" value="Ing. Informática"> Ing. Informática</label>
+    </div>
+
+    <div class="question">
+      <p>6.- ¿Cuál es el nombre de la mascota que tuvo Joaquín?</p>
+      <label><input type="radio" name="q6" value="Chuleta"> Chuleta</label><br>
+      <label><input type="radio" name="q6" value="Simba"> Simba</label><br>
+      <label><input type="radio" name="q6" value="Tom"> Tom</label><br>
+      <label><input type="radio" name="q6" value="Sopa seca"> Sopa seca</label>
+    </div>
+
+    <div class="question">
+      <p>7.- ¿Prim@ favorit@?</p>
+      <label><input type="radio" name="q7" value="Ari"> Ari</label><br>
+      <label><input type="radio" name="q7" value="Mati"> Mati</label><br>
+      <label><input type="radio" name="q7" value="Ale"> Ale</label><br>
+      <label><input type="radio" name="q7" value="Rena"> Rena</label><br>
+      <label><input type="radio" name="q7" value="TODOS"> TODOS</label>
+    </div>
+
+    <div class="question">
+      <p>8.- ¿Serie favorita?</p>
+      <label><input type="radio" name="q8" value="Breaking Bad"> Breaking Bad</label><br>
+      <label><input type="radio" name="q8" value="Stranger Things"> Stranger Things</label><br>
+      <label><input type="radio" name="q8" value="Prison Break"> Prison Break</label><br>
+      <label><input type="radio" name="q8" value="Ted Lasso"> Ted Lasso</label>
+    </div>
+
+    <div class="question">
+      <p>9.- ¿De qué trabaja/trabajaba Joaquín?</p>
+      <label><input type="radio" name="q9" value="Chef"> Chef</label><br>
+      <label><input type="radio" name="q9" value="Heladero"> Heladero</label><br>
+      <label><input type="radio" name="q9" value="Caja"> Caja</label><br>
+      <label><input type="radio" name="q9" value="Asistente de cocina"> Asistente de cocina</label>
+    </div>
+
+    <div class="question">
+      <p>10.- ¿Cuál de estas frases NO dijo Joaquín?</p>
+      <label><input type="radio" name="q10" value="Manam"> Manam</label><br>
+      <label><input type="radio" name="q10" value="Tú me has visto?"> Tú me has visto?</label><br>
+      <label><input type="radio" name="q10" value="Un flan"> Un flan</label><br>
+      <label><input type="radio" name="q10" value="Soy callejero pe"> Soy callejero pe</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    // Sumar intento si la página se recarga
+    if (localStorage.getItem('intentos')) {
+      let intentos = parseInt(localStorage.getItem('intentos')) + 1;
+      localStorage.setItem('intentos', intentos);
+    } else {
+      localStorage.setItem('intentos', 1);
+    }
+
+    const correctAnswers = {
+      q1: "Pollo a la brasa",
+      q2: "Inka Cola",
+      q3: "Casa de la mamita",
+      q4: "Jugar fútbol",
+      q5: "Ing. Software",
+      q6: "Chuleta",
+      q7: "TODOS",
+      q8: "Breaking Bad",
+      q9: "Heladero",
+      q10: "Un flan"
+    };
+
+    document.getElementById("quizForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      
+      let score = 0;
+      let output = "<h2>Respuestas correctas:</h2><ul>";
+      
+      for (let key in correctAnswers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === correctAnswers[key]) {
+          score += 2;
+        }
+        output += `<li>${key.toUpperCase()}: ${correctAnswers[key]}</li>`;
+      }
+      
+      output += `</ul><p><strong>Puntuación:</strong> ${score} / 20</p>`;
+      output += `<p><strong>N.º de intentos:</strong> ${localStorage.getItem('intentos')}</p>`;
+      
+      document.getElementById("result").innerHTML = output;
+      
+      // Deshabilitar el formulario
+      const inputs = document.querySelectorAll('input');
+      inputs.forEach(input => input.disabled = true);
+      document.querySelector('button').disabled = true;
+    });
+  </script>
+</body>
+</html>
